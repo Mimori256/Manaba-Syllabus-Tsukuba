@@ -1,2 +1,2 @@
 # Manaba-Syllabus-Tsukuba
-筑波大学のmanabaの授業のコースページに、シラバスに飛ぶボタンを追加する
+筑波大学のmanabaの授業のコースページに、シラバスに飛ぶボタンを追加するChrome拡張
