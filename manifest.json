@@ -1,6 +1,6 @@
 {
   "name": "Tsukuba-syllabus",
-  "version": "0.1",
+  "version": "1.0.2",
   "manifest_version": 2,
   "description": "manabaのコースページに、授業のシラバスに飛ばすボタンを作る",
   "content_scripts": [{
