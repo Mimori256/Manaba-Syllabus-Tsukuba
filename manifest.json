@@ -5,7 +5,7 @@
   "description": "manabaのコースページに、授業のシラバスに飛ばすボタンを作る",
   "content_scripts": [{
     "matches": ["https://manaba.tsukuba.ac.jp/ct/course_*"],
-    "js": [ "js/content.js" ],
+    "js": [ "content.js" ],
     "run_at": "document_end"
   }]
 }
