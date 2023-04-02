@@ -4,7 +4,7 @@ window.onload = function () {
   if (pattern.test(location.href) === true) {
     const courseCode = document.getElementsByClassName("coursecode")[0].innerText;
     console.log(courseCode);
-    const link = "https://kdb.tsukuba.ac.jp/syllabi/2022/" + courseCode + "/jpn/";
+    const link = "https://kdb.tsukuba.ac.jp/syllabi/2023/" + courseCode + "/jpn/";
     const courseNameLength = document.getElementById("coursename").title.length;
     let button = document.createElement("button");
   
