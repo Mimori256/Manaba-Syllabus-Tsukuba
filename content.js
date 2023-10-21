@@ -3,8 +3,16 @@ window.onload = function () {
   let pattern = new RegExp("https://manaba.tsukuba.ac.jp/ct/course_[0-9]+$");
   if (pattern.test(location.href) === true) {
     const courseCode = document.getElementsByClassName("coursecode")[0].innerText;
-    const currentYear = String(new Date().getFullYear());
-    const link = `https://kdb.tsukuba.ac.jp/syllabi/${currentYear}/${courseCode}/jpn/`;
+    const now = new Date();
+    const currentYear =  now.getFullYear();
+    const currentMonth = now.getMonth() + 1;
+    let nendo;
+    if (currentMonth < 4) {
+      nendo = String(currentYear - 1);
+    } else {
+      nendo = String(currentYear);
+    }
+    const link = `https://kdb.tsukuba.ac.jp/syllabi/${nendo}/${courseCode}/jpn/`;
     const courseNameLength = document.getElementById("coursename").title.length;
     let button = document.createElement("button");
   
