@@ -3,8 +3,8 @@ window.onload = function () {
   let pattern = new RegExp("https://manaba.tsukuba.ac.jp/ct/course_[0-9]+$");
   if (pattern.test(location.href) === true) {
     const courseCode = document.getElementsByClassName("coursecode")[0].innerText;
-    console.log(courseCode);
-    const link = "https://kdb.tsukuba.ac.jp/syllabi/2023/" + courseCode + "/jpn/";
+    const currentYear = String(new Date().getFullYear());
+    const link = `https://kdb.tsukuba.ac.jp/syllabi/${currentYear}/${courseCode}/jpn/`;
     const courseNameLength = document.getElementById("coursename").title.length;
     let button = document.createElement("button");
   
@@ -27,12 +27,12 @@ window.onload = function () {
     } else {
       margin = String(marginRem) + "rem";
     }
-  
-  
-    document.querySelector("button").style.marginLeft = margin;
-    document.querySelector("button").style.color = "#0000FF";
-    document.querySelector("button").style.borderStyle = "solid";
-    document.querySelector("button").style.borderColor = "#AAAAAA";
+
+    button.style.borderStyle = "solid";
+    button.style.borderColor = "#AAAAAA";
+    button.style.color = "#0000FF";
+    button.style.cursor = "pointer";
+    button.style.marginLeft = margin;
   }
 };
 
