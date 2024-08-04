@@ -1,0 +1,14 @@
+{
+  "name": "Manaba-Syllabus-Tsukuba",
+  "version": "1.0.5",
+  "description": "",
+  "scripts": {
+    "minify": "uglifyjs -c -m -o content_min.js content.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "uglify-js": "^3.19.1"
+  }
+}
